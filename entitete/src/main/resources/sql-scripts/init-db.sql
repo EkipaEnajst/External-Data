@@ -1,5 +1,7 @@
-INSERT INTO uporabnik (firstName, lastName, username, email,id) VALUES ('Petra', 'Kos', 'petrakos', 'petra.kos@hotmail.com',1000);
-INSERT INTO uporabnik (firstName, lastName, username, email,id) VALUES ('Miha', 'Novak', 'mihanovak', 'miha.novak@gmail.com',2);
+INSERT INTO parkirisce (id, ime, zacetekDneva, konecDneva, cenaDnevnaPrviDveUri, cenaDnevnaTretjaUra, cenaDefault, cenaNocna, lokacija) VALUES (1,'Parkirišče Bežigrad',7,19,0.8,0.8,0.8, 2.00, '46.062506073254,14.508283138275');
+INSERT INTO parkirisce (id, ime, zacetekDneva, konecDneva, cenaDnevnaPrviDveUri, cenaDnevnaTretjaUra, cenaDefault, cenaNocna, lokacija) VALUES (2,'Parkirišče Dolenjska cesta (Strelišče)',6,22,0.70, 0.70,0.7,2.0, '46.039293116647,14.517512619495');
+INSERT INTO parkirisce (id, ime, zacetekDneva, konecDneva, cenaDnevnaPrviDveUri, cenaDnevnaTretjaUra, cenaDefault, cenaNocna, lokacija) VALUES (3,'Parkirišče Gosarjeva ulica',7,19,0.70, 0.80,0.8,2.0, '46.074510807524,14.518057107925');
+
 
 
 
