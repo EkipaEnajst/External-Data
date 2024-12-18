@@ -9,6 +9,7 @@ import java.util.List;
 @ApplicationScoped
 public class ZasedenostZrno {
 
+    ObjectMapper mapper = new ObjectMapper();
 
 
     public List<Zasedenost> getZasedenosti() {
