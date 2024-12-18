@@ -14,6 +14,11 @@ public class Zasedenost {
     @JsonProperty("subscribers")
     private Abonenti abonenti;
 
+    @Override
+    public String toString() {
+        return String.format("%s\n",this.dnevniUporabniki);
+    }
+
     @JsonGetter("daily_users")
     public DnevniUporabniki getDnevniUporabniki() {
         return dnevniUporabniki;
@@ -43,6 +48,11 @@ class DnevniUporabniki {
 
     @JsonProperty("available_spaces")
     private int prosta;
+
+    @Override
+    public String toString() {
+        return String.format("Na voljo: %d, Prosta: %d", naVoljo, prosta);
+    }
 
     @JsonGetter("total_spaces")
     public int getNaVoljo() {

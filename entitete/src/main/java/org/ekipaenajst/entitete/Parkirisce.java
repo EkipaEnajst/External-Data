@@ -1,18 +1,19 @@
 package org.ekipaenajst.entitete;
 
 import javax.persistence.*;
+import java.io.Serializable;
 
 @Entity
 @Table(name="parkirisce")
 @NamedQueries(value = {
         @NamedQuery(name = "Parkirisce.findAll", query="SELECT p FROM Parkirisce p"),
-        @NamedQuery(name = "Uporabnik.findByName",
+        @NamedQuery(name = "Parkirisce.findByName",
                 query="SELECT p FROM Parkirisce p WHERE p.ime = :imeParam")
 })
-public class Parkirisce {
+public class Parkirisce implements Serializable {
 
     @Id
-    @GeneratedValue
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     private int id;
 
     private String ime;
