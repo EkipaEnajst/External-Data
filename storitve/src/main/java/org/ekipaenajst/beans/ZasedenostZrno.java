@@ -18,10 +18,28 @@ public class ZasedenostZrno {
     ObjectMapper mapper = new ObjectMapper();
 
 
-    public List<Zasedenost> getZasedenosti() throws IOException {
-        File input = new File("./availability.json");
+    public List<Zasedenost> getZasedenosti() throws IOException, InterruptedException {
+        //File input = new File("C:\\Users\\lovro\\Faks\\PRPO\\projekt\\externaldata\\storitve\\src\\main\\resources\\json-files\\availability.json");
+//        String userDirectory = new File("").getAbsolutePath();
+//        System.out.println(userDirectory);
+//
+//        return null;
+
+        Runtime runtime = Runtime.getRuntime();
+        Process process = runtime.exec("./api/src/main/resources/json-files/scrapeTest.exe");
+
+        process.waitFor();
+
+
+
+        File input = new File("./api/src/main/resources/json-files/availability1.json");
+        System.out.println("Input file: " + input.getAbsolutePath());
+
         Zasedenost[] zasedenosti = mapper.readValue(input, Zasedenost[].class);
         System.out.println(Arrays.toString(zasedenosti));
+
+
+        System.out.println(process.isAlive());
         return Arrays.asList(zasedenosti);
     }
 

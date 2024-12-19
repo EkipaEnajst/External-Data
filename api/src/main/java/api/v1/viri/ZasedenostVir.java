@@ -22,7 +22,7 @@ public class ZasedenostVir {
     private ZasedenostZrno zasedenostZrno;
 
     @GET
-    public Response vrniZasedenosti() throws IOException {
+    public Response vrniZasedenosti() throws IOException, InterruptedException {
 
         List<Zasedenost> zasedenosti = zasedenostZrno.getZasedenosti();
 

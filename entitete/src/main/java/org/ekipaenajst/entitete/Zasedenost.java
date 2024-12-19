@@ -5,9 +5,32 @@ import com.fasterxml.jackson.annotation.JsonGetter;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import com.fasterxml.jackson.annotation.JsonSetter;
 
+import java.io.Serializable;
 
-public class Zasedenost {
 
+public class Zasedenost implements Serializable{
+
+    @JsonProperty("title")
+    private String title;
+
+    @JsonProperty("link")
+    private String link;
+
+    public String getTitle() {
+        return title;
+    }
+
+    public void setTitle(String title) {
+        this.title = title;
+    }
+
+    public String getLink() {
+        return link;
+    }
+
+    public void setLink(String link) {
+        this.link = link;
+    }
 
     @JsonProperty("daily_users")
     private DnevniUporabniki dnevniUporabniki;
@@ -16,7 +39,7 @@ public class Zasedenost {
 
     @Override
     public String toString() {
-        return String.format("%s\n",this.dnevniUporabniki);
+        return String.format("%s: %s\n",this.title,this.dnevniUporabniki);
     }
 
     @JsonGetter("daily_users")
@@ -41,80 +64,3 @@ public class Zasedenost {
 }
 
 
-class DnevniUporabniki {
-
-    @JsonProperty("total_spaces")
-    private int naVoljo;
-
-    @JsonProperty("available_spaces")
-    private int prosta;
-
-    @Override
-    public String toString() {
-        return String.format("Na voljo: %d, Prosta: %d", naVoljo, prosta);
-    }
-
-    @JsonGetter("total_spaces")
-    public int getNaVoljo() {
-        return naVoljo;
-    }
-
-    @JsonSetter("total_spaces")
-    public void setNaVoljo(int naVoljo) {
-        this.naVoljo = naVoljo;
-    }
-
-    @JsonGetter("available_spaces")
-    public int getProsta() {
-        return prosta;
-    }
-
-    @JsonSetter("available_spaces")
-    public void setProsta(int prosta) {
-        this.prosta = prosta;
-    }
-}
-
-class Abonenti {
-    @JsonProperty("total_spaces")
-    private int naVoljo;
-    @JsonProperty("reserved_spaces")
-    private int rezervirana;
-    @JsonProperty("free_spaces")
-    private int prosta;
-    @JsonProperty("waiting_queue")
-    private int dolzinaVrste;
-
-    @JsonGetter("total_spaces")
-    public int getNaVoljo() {
-        return naVoljo;
-    }
-    @JsonSetter("total_spaces")
-    public void setNaVoljo(int naVoljo) {
-        this.naVoljo = naVoljo;
-    }
-    @JsonGetter("reserved_spaces")
-    public int getRezervirana() {
-        return rezervirana;
-    }
-    @JsonSetter("reserved_spaces")
-    public void setRezervirana(int rezervirana) {
-        this.rezervirana = rezervirana;
-    }
-    @JsonGetter("free_spaces")
-    public int getProsta() {
-        return prosta;
-    }
-    @JsonSetter("free_spaces")
-    public void setProsta(int prosta) {
-        this.prosta = prosta;
-    }
-    @JsonGetter("waiting_queue")
-    public int getDolzinaVrste() {
-        return dolzinaVrste;
-    }
-    @JsonSetter("waiting_queue")
-    public void setDolzinaVrste(int dolzinaVrste) {
-        this.dolzinaVrste = dolzinaVrste;
-    }
-}

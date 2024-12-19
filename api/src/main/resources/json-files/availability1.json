@@ -1,0 +1,534 @@
+[
+    {
+        "title": "Parkirišče Bežigrad",
+        "link": "https://www.lpt.si/parkirisca/lokacije-in-opis-parkirisc/parkirisca-za-osebna-vozila/bezigrad",
+        "daily_users": {
+            "available_spaces": "26",
+            "total_spaces": "64"
+        },
+        "subscribers": {
+            "total_spaces": "0",
+            "reserved_spaces": "0",
+            "free_spaces": "0",
+            "waiting_queue": "0"
+        }
+    },
+    {
+        "title": "Parkirišče Dolenjska cesta (Strelišče)",
+        "link": "https://www.lpt.si/parkirisca/lokacije-in-opis-parkirisc/parkirisca-za-osebna-vozila/dolenjska-cesta-strelisce",
+        "daily_users": {
+            "available_spaces": "54",
+            "total_spaces": "67"
+        },
+        "subscribers": {
+            "total_spaces": "25",
+            "reserved_spaces": "25",
+            "free_spaces": "0",
+            "waiting_queue": "0"
+        }
+    },
+    {
+        "title": "Parkirišče Gosarjeva ulica",
+        "link": "https://www.lpt.si/parkirisca/lokacije-in-opis-parkirisc/parkirisca-za-osebna-vozila/gosarjeva-ulica",
+        "daily_users": {
+            "available_spaces": "28",
+            "total_spaces": "190"
+        },
+        "subscribers": {
+            "total_spaces": "138",
+            "reserved_spaces": "138",
+            "free_spaces": "0",
+            "waiting_queue": "175"
+        }
+    },
+    {
+        "title": "Parkirišče Gospodarsko razstavišče",
+        "link": "https://www.lpt.si/parkirisca/lokacije-in-opis-parkirisc/parkirisca-za-osebna-vozila/gospodarsko-razstavisce",
+        "daily_users": {
+            "available_spaces": "367",
+            "total_spaces": "400"
+        },
+        "subscribers": {
+            "total_spaces": "150",
+            "reserved_spaces": "150",
+            "free_spaces": "0",
+            "waiting_queue": "142"
+        }
+    },
+    {
+        "title": "Parkirišče Komanova ulica",
+        "link": "https://www.lpt.si/parkirisca/lokacije-in-opis-parkirisc/parkirisca-za-osebna-vozila/komanova-ulica",
+        "daily_users": {
+            "available_spaces": "0",
+            "total_spaces": "55"
+        },
+        "subscribers": {
+            "total_spaces": "55",
+            "reserved_spaces": "55",
+            "free_spaces": "0",
+            "waiting_queue": "84"
+        }
+    },
+    {
+        "title": "Parkirišče Kongresni trg",
+        "link": "https://www.lpt.si/parkirisca/lokacije-in-opis-parkirisc/parkirisca-za-osebna-vozila/ph-kongresni-trg",
+        "daily_users": {
+            "available_spaces": "21",
+            "total_spaces": "720"
+        },
+        "subscribers": {
+            "total_spaces": "400",
+            "reserved_spaces": "400",
+            "free_spaces": "0",
+            "waiting_queue": "93"
+        }
+    },
+    {
+        "title": "Parkirišče Kozolec",
+        "link": "https://www.lpt.si/parkirisca/lokacije-in-opis-parkirisc/parkirisca-za-osebna-vozila/kozolec",
+        "daily_users": {
+            "available_spaces": "55",
+            "total_spaces": "394"
+        },
+        "subscribers": {
+            "total_spaces": "220",
+            "reserved_spaces": "220",
+            "free_spaces": "0",
+            "waiting_queue": "102"
+        }
+    },
+    {
+        "title": "Parkirišče Kranjčeva ulica",
+        "link": "https://www.lpt.si/parkirisca/lokacije-in-opis-parkirisc/parkirisca-za-osebna-vozila/kranjceva-ulica",
+        "daily_users": {
+            "available_spaces": "77",
+            "total_spaces": "117"
+        },
+        "subscribers": {
+            "total_spaces": "65",
+            "reserved_spaces": "65",
+            "free_spaces": "0",
+            "waiting_queue": "111"
+        }
+    },
+    {
+        "title": "Parkirišče Linhartova",
+        "link": "https://www.lpt.si/parkirisca/lokacije-in-opis-parkirisc/parkirisca-za-osebna-vozila/linhartova",
+        "daily_users": {
+            "available_spaces": "109",
+            "total_spaces": "50"
+        },
+        "subscribers": {
+            "total_spaces": "50",
+            "reserved_spaces": "50",
+            "free_spaces": "0",
+            "waiting_queue": "26"
+        }
+    },
+    {
+        "title": "Parkirišče Metelkova ulica",
+        "link": "https://www.lpt.si/parkirisca/lokacije-in-opis-parkirisc/parkirisca-za-osebna-vozila/metelkova-ulica",
+        "daily_users": {
+            "available_spaces": "22",
+            "total_spaces": "89"
+        },
+        "subscribers": {
+            "total_spaces": "26",
+            "reserved_spaces": "26",
+            "free_spaces": "0",
+            "waiting_queue": "203"
+        }
+    },
+    {
+        "title": "Parkirišče Mirje",
+        "link": "https://www.lpt.si/parkirisca/lokacije-in-opis-parkirisc/parkirisca-za-osebna-vozila/mirje",
+        "daily_users": {
+            "available_spaces": "23",
+            "total_spaces": "107"
+        },
+        "subscribers": {
+            "total_spaces": "55",
+            "reserved_spaces": "55",
+            "free_spaces": "0",
+            "waiting_queue": "231"
+        }
+    },
+    {
+        "title": "Parkirišče NUK II.",
+        "link": "https://www.lpt.si/parkirisca/lokacije-in-opis-parkirisc/parkirisca-za-osebna-vozila/nuk-ii",
+        "daily_users": {
+            "available_spaces": "6",
+            "total_spaces": "188"
+        },
+        "subscribers": {
+            "total_spaces": "10",
+            "reserved_spaces": "0",
+            "free_spaces": "10",
+            "waiting_queue": "25"
+        }
+    },
+    {
+        "title": "Parkirišče P+R Barje",
+        "link": "https://www.lpt.si/parkirisca/lokacije-in-opis-parkirisc/parkirisca-za-osebna-vozila/pr-barje",
+        "daily_users": {
+            "available_spaces": "0",
+            "total_spaces": "347"
+        },
+        "subscribers": {
+            "total_spaces": "0",
+            "reserved_spaces": "0",
+            "free_spaces": "0",
+            "waiting_queue": "0"
+        }
+    },
+    {
+        "title": "Parkirišče P+R Dolgi Most",
+        "link": "https://www.lpt.si/parkirisca/lokacije-in-opis-parkirisc/parkirisca-za-osebna-vozila/pr-dolgi-most",
+        "daily_users": {
+            "available_spaces": "0",
+            "total_spaces": "349"
+        },
+        "subscribers": {
+            "total_spaces": "0",
+            "reserved_spaces": "0",
+            "free_spaces": "0",
+            "waiting_queue": "0"
+        }
+    },
+    {
+        "title": "Parkirišče P+R Studenec",
+        "link": "https://www.lpt.si/parkirisca/lokacije-in-opis-parkirisc/parkirisca-za-osebna-vozila/pr-studenec",
+        "daily_users": {
+            "available_spaces": "0",
+            "total_spaces": "187"
+        },
+        "subscribers": {
+            "total_spaces": "50",
+            "reserved_spaces": "50",
+            "free_spaces": "0",
+            "waiting_queue": "1"
+        }
+    },
+    {
+        "title": "Parkirišče PH Kolezija",
+        "link": "https://www.lpt.si/parkirisca/lokacije-in-opis-parkirisc/parkirisca-za-osebna-vozila/ph-kolezija",
+        "daily_users": {
+            "available_spaces": "72",
+            "total_spaces": "80"
+        },
+        "subscribers": {
+            "total_spaces": "50",
+            "reserved_spaces": "49",
+            "free_spaces": "1",
+            "waiting_queue": "131"
+        }
+    },
+    {
+        "title": "Parkirišče Pokopališče Polje",
+        "link": "https://www.lpt.si/parkirisca/lokacije-in-opis-parkirisc/parkirisca-za-osebna-vozila/pokopalisce-polje",
+        "daily_users": {
+            "available_spaces": "45",
+            "total_spaces": "39"
+        },
+        "subscribers": {
+            "total_spaces": "20",
+            "reserved_spaces": "8",
+            "free_spaces": "12",
+            "waiting_queue": "1"
+        }
+    },
+    {
+        "title": "Parkirišče Povšetova ulica",
+        "link": "https://www.lpt.si/parkirisca/lokacije-in-opis-parkirisc/parkirisca-za-osebna-vozila/povsetova-ulica",
+        "daily_users": {
+            "available_spaces": "63",
+            "total_spaces": "81"
+        },
+        "subscribers": {
+            "total_spaces": "50",
+            "reserved_spaces": "49",
+            "free_spaces": "1",
+            "waiting_queue": "244"
+        }
+    },
+    {
+        "title": "Parkirišče Sanatorij Emona",
+        "link": "https://www.lpt.si/parkirisca/lokacije-in-opis-parkirisc/parkirisca-za-osebna-vozila/sanatorij-emona",
+        "daily_users": {
+            "available_spaces": "5",
+            "total_spaces": "25"
+        },
+        "subscribers": {
+            "total_spaces": "0",
+            "reserved_spaces": "0",
+            "free_spaces": "0",
+            "waiting_queue": "0"
+        }
+    },
+    {
+        "title": "Parkirišče Slovenčeva ulica",
+        "link": "https://www.lpt.si/parkirisca/lokacije-in-opis-parkirisc/parkirisca-za-osebna-vozila/slovenceva-ulica",
+        "daily_users": {
+            "available_spaces": "0",
+            "total_spaces": "128"
+        },
+        "subscribers": {
+            "total_spaces": "118",
+            "reserved_spaces": "118",
+            "free_spaces": "0",
+            "waiting_queue": "103"
+        }
+    },
+    {
+        "title": "Parkirišče Tivoli I.",
+        "link": "https://www.lpt.si/parkirisca/lokacije-in-opis-parkirisc/parkirisca-za-osebna-vozila/tivoli-i",
+        "daily_users": {
+            "available_spaces": "77",
+            "total_spaces": "351"
+        },
+        "subscribers": {
+            "total_spaces": "63",
+            "reserved_spaces": "61",
+            "free_spaces": "2",
+            "waiting_queue": "482"
+        }
+    },
+    {
+        "title": "Parkirišče Tivoli II.",
+        "link": "https://www.lpt.si/parkirisca/lokacije-in-opis-parkirisc/parkirisca-za-osebna-vozila/tivoli-ii",
+        "daily_users": {
+            "available_spaces": "75",
+            "total_spaces": "159"
+        },
+        "subscribers": {
+            "total_spaces": "40",
+            "reserved_spaces": "40",
+            "free_spaces": "0",
+            "waiting_queue": "306"
+        }
+    },
+    {
+        "title": "Parkirišče Trg mladinskih delovnih brigad",
+        "link": "https://www.lpt.si/parkirisca/lokacije-in-opis-parkirisc/parkirisca-za-osebna-vozila/trg-mladinskih-delovnih-brigad",
+        "daily_users": {
+            "available_spaces": "2",
+            "total_spaces": "26"
+        },
+        "subscribers": {
+            "total_spaces": "0",
+            "reserved_spaces": "0",
+            "free_spaces": "0",
+            "waiting_queue": "0"
+        }
+    },
+    {
+        "title": "Parkirišče Trg prekomorskih brigad",
+        "link": "https://www.lpt.si/parkirisca/lokacije-in-opis-parkirisc/parkirisca-za-osebna-vozila/trg-prekomorskih-brigad",
+        "daily_users": {
+            "available_spaces": "0",
+            "total_spaces": "61"
+        },
+        "subscribers": {
+            "total_spaces": "10",
+            "reserved_spaces": "10",
+            "free_spaces": "0",
+            "waiting_queue": "68"
+        }
+    },
+    {
+        "title": "Parkirišče Štembalova ulica",
+        "link": "https://www.lpt.si/parkirisca/lokacije-in-opis-parkirisc/parkirisca-za-osebna-vozila/stembalova-ulica",
+        "daily_users": {
+            "available_spaces": "0",
+            "total_spaces": "155"
+        },
+        "subscribers": {
+            "total_spaces": "153",
+            "reserved_spaces": "153",
+            "free_spaces": "0",
+            "waiting_queue": "94"
+        }
+    },
+    {
+        "title": "Parkirišče Žale I.",
+        "link": "https://www.lpt.si/parkirisca/lokacije-in-opis-parkirisc/parkirisca-za-osebna-vozila/zale-i",
+        "daily_users": {
+            "available_spaces": "82",
+            "total_spaces": "125"
+        },
+        "subscribers": {
+            "total_spaces": "0",
+            "reserved_spaces": "0",
+            "free_spaces": "0",
+            "waiting_queue": "33"
+        }
+    },
+    {
+        "title": "Parkirišče Žale II.",
+        "link": "https://www.lpt.si/parkirisca/lokacije-in-opis-parkirisc/parkirisca-za-osebna-vozila/zale-ii",
+        "daily_users": {
+            "available_spaces": "49",
+            "total_spaces": "80"
+        },
+        "subscribers": {
+            "total_spaces": "0",
+            "reserved_spaces": "0",
+            "free_spaces": "0",
+            "waiting_queue": "38"
+        }
+    },
+    {
+        "title": "Parkirišče Žale III.",
+        "link": "https://www.lpt.si/parkirisca/lokacije-in-opis-parkirisc/parkirisca-za-osebna-vozila/zale-iii",
+        "daily_users": {
+            "available_spaces": "56",
+            "total_spaces": "83"
+        },
+        "subscribers": {
+            "total_spaces": "65",
+            "reserved_spaces": "65",
+            "free_spaces": "0",
+            "waiting_queue": "112"
+        }
+    },
+    {
+        "title": "Parkirišče Žale IV.",
+        "link": "https://www.lpt.si/parkirisca/lokacije-in-opis-parkirisc/parkirisca-za-osebna-vozila/zale-iv",
+        "daily_users": {
+            "available_spaces": "77",
+            "total_spaces": "78"
+        },
+        "subscribers": {
+            "total_spaces": "75",
+            "reserved_spaces": "72",
+            "free_spaces": "3",
+            "waiting_queue": "88"
+        }
+    },
+    {
+        "title": "Parkirišče Žale V.",
+        "link": "https://www.lpt.si/parkirisca/lokacije-in-opis-parkirisc/parkirisca-za-osebna-vozila/zale-v",
+        "daily_users": {
+            "available_spaces": "285",
+            "total_spaces": "100"
+        },
+        "subscribers": {
+            "total_spaces": "75",
+            "reserved_spaces": "73",
+            "free_spaces": "2",
+            "waiting_queue": "0"
+        }
+    },
+    {
+        "title": "Parkirišče P+R Ježica",
+        "link": "https://www.lpt.si/parkirisca/lokacije-in-opis-parkirisc/parkirisca-za-osebna-vozila/pr-jezica",
+        "daily_users": {
+            "available_spaces": "0",
+            "total_spaces": "0"
+        },
+        "subscribers": {
+            "total_spaces": "0",
+            "reserved_spaces": "0",
+            "free_spaces": "0",
+            "waiting_queue": "0"
+        }
+    },
+    {
+        "title": "Parkirišče P+R  Stanežiče",
+        "link": "https://www.lpt.si/parkirisca/lokacije-in-opis-parkirisc/parkirisca-za-osebna-vozila/pr-stanezice",
+        "daily_users": {
+            "available_spaces": "0",
+            "total_spaces": "0"
+        },
+        "subscribers": {
+            "total_spaces": "0",
+            "reserved_spaces": "0",
+            "free_spaces": "0",
+            "waiting_queue": "0"
+        }
+    },
+    {
+        "title": "Parkirišče ŠRC Stožice",
+        "link": "https://www.lpt.si/parkirisca/lokacije-in-opis-parkirisc/parkirisca-za-osebna-vozila/src-stozice",
+        "daily_users": {
+            "available_spaces": "0",
+            "total_spaces": "509"
+        },
+        "subscribers": {
+            "total_spaces": "255",
+            "reserved_spaces": "255",
+            "free_spaces": "0",
+            "waiting_queue": "37"
+        }
+    },
+    {
+        "title": "Parkirišče Tacen (Kajakaška cesta)",
+        "link": "https://www.lpt.si/parkirisca/lokacije-in-opis-parkirisc/parkirisca-za-osebna-vozila/tacen",
+        "daily_users": {
+            "available_spaces": "0",
+            "total_spaces": "0"
+        },
+        "subscribers": {
+            "total_spaces": "0",
+            "reserved_spaces": "0",
+            "free_spaces": "0",
+            "waiting_queue": "0"
+        }
+    },
+    {
+        "title": "Parkirišče Bratislavska",
+        "link": "https://www.lpt.si/parkirisca/lokacije-in-opis-parkirisc/parkirisca-za-avtobuse/bratislavska",
+        "daily_users": {
+            "available_spaces": "0",
+            "total_spaces": "0"
+        },
+        "subscribers": {
+            "total_spaces": "0",
+            "reserved_spaces": "0",
+            "free_spaces": "0",
+            "waiting_queue": "0"
+        }
+    },
+    {
+        "title": "Parkirišče BS/4 I",
+        "link": "https://www.lpt.si/parkirisca/lokacije-in-opis-parkirisc/parkirisca-za-osebna-vozila/bs4",
+        "daily_users": {
+            "available_spaces": "37",
+            "total_spaces": "100"
+        },
+        "subscribers": {
+            "total_spaces": "100",
+            "reserved_spaces": "57",
+            "free_spaces": "43",
+            "waiting_queue": "6"
+        }
+    },
+    {
+        "title": "Parkirišče Rog",
+        "link": "https://www.lpt.si/parkirisca/lokacije-in-opis-parkirisc/parkirisca-za-osebna-vozila/ph-rog",
+        "daily_users": {
+            "available_spaces": "10",
+            "total_spaces": "80"
+        },
+        "subscribers": {
+            "total_spaces": "35",
+            "reserved_spaces": "35",
+            "free_spaces": "0",
+            "waiting_queue": "31"
+        }
+    },
+    {
+        "title": "Parkirišče P+R Letališka",
+        "link": "https://www.lpt.si/parkirisca/lokacije-in-opis-parkirisc/parkirisca-za-osebna-vozila/pr-letaliska",
+        "daily_users": {
+            "available_spaces": "0",
+            "total_spaces": "0"
+        },
+        "subscribers": {
+            "total_spaces": "0",
+            "reserved_spaces": "0",
+            "free_spaces": "0",
+            "waiting_queue": "0"
+        }
+    }
+]
