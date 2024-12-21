@@ -25,17 +25,30 @@ public class ParkiriscaZrno {
     private Logger log = Logger.getLogger(UporabnikiZrno.class.getName());
 
 
-    public List<Parkirisce> getParkirisca() {
+    public List<Parkirisce> getParkirisca() throws IOException, InterruptedException {
 
         Query q = em.createNamedQuery("Parkirisce.findAll", Parkirisce.class);
 
         List<Parkirisce> resultList = (List<Parkirisce>)q.getResultList();
+
+        List<Zasedenost> zasedenosti = zasedenostZrno.getZasedenosti();
+
+        for (Parkirisce p : resultList) {
+            Zasedenost z = zasedenosti.stream().filter( z_ -> z_.getTitle().equals(p.getIme())).findFirst().orElse(null);
+
+            if (z!=null) {
+                p.setZasedenost(z);
+            }
+
+        }
 
         return resultList;
     }
 
     public Parkirisce getParkirisce(int id) throws IOException, InterruptedException {
         Parkirisce p = em.find(Parkirisce.class, id);
+
+        if (p==null) return null;
 
         Zasedenost z = zasedenostZrno.getZasedenost(p.getIme());
 
