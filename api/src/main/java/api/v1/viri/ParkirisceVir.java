@@ -3,6 +3,7 @@ package api.v1.viri;
 import org.ekipaenajst.beans.ParkiriscaZrno;
 import org.ekipaenajst.entitete.Parkirisce;
 
+import javax.annotation.security.RolesAllowed;
 import javax.enterprise.context.ApplicationScoped;
 import javax.inject.Inject;
 import javax.ws.rs.*;
@@ -36,5 +37,12 @@ public class ParkirisceVir {
         return Response.status(Response.Status.OK).entity(p).build();
 
 
+    }
+
+    @RolesAllowed("admin") // POGLEJ KAKO SE UPORABLJA TE ANOTACIJE
+    @POST
+    public Response dodajParkirisce(Parkirisce p) throws IOException, InterruptedException {
+        parkiriscaZrno.createParkirisce(p);
+        return Response.status(Response.Status.CREATED).entity(p).build();
     }
 }

@@ -58,4 +58,8 @@ public class ParkiriscaZrno {
 
 
     }
+
+    public void createParkirisce(Parkirisce p) throws IOException, InterruptedException {
+        em.persist(p);
+    }
 }
