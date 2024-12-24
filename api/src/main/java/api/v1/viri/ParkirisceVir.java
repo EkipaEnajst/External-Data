@@ -39,7 +39,7 @@ public class ParkirisceVir {
 
     }
 
-    @RolesAllowed("admin") // POGLEJ KAKO SE UPORABLJA TE ANOTACIJE
+    //@RolesAllowed("admin") // TODO POGLEJ KAKO SE UPORABLJA TE ANOTACIJE
     @POST
     public Response dodajParkirisce(Parkirisce p) throws IOException, InterruptedException {
         parkiriscaZrno.createParkirisce(p);

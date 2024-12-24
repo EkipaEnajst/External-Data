@@ -1,5 +1,6 @@
 package org.ekipaenajst.entitete;
 
+import javax.annotation.processing.Generated;
 import javax.persistence.*;
 import java.io.Serializable;
 
@@ -14,7 +15,7 @@ public class Parkirisce implements Serializable {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private int id;
+    private Integer id;
 
     private String ime;
     private int zacetekDneva;

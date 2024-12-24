@@ -9,6 +9,7 @@ import javax.inject.Inject;
 import javax.persistence.EntityManager;
 import javax.persistence.PersistenceContext;
 import javax.persistence.Query;
+import javax.transaction.Transactional;
 import java.io.IOException;
 import java.util.List;
 import java.util.logging.Logger;
@@ -59,6 +60,7 @@ public class ParkiriscaZrno {
 
     }
 
+    @Transactional
     public void createParkirisce(Parkirisce p) throws IOException, InterruptedException {
         em.persist(p);
     }
