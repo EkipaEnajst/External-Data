@@ -21,9 +21,16 @@ public class ZasedenostZrno {
 
 
     public List<Zasedenost> getZasedenosti() throws IOException, InterruptedException {
+        // DEBUG
+
+//        String userDirectory = new File("").getAbsolutePath();
+//        System.out.println("TRENUTNI DIRECTOR: "+userDirectory);
+//        if (true) return null;
+        // ----------
+
 
         String pth = "./api/src/main/resources/json-files/";
-        ProcessBuilder pb = new ProcessBuilder(pth + "scrapeTest.exe/", "-o", "\""+pth+"\"");
+        ProcessBuilder pb = new ProcessBuilder(pth + "scrapeTest-linux", "-o", "" + pth + "");
         pb.redirectErrorStream(true);
         Process p = pb.start();
         BufferedReader reader = new BufferedReader(new InputStreamReader(p.getInputStream()));
@@ -32,9 +39,6 @@ public class ZasedenostZrno {
         //System.out.println(p.isAlive());
         p.waitFor();
         //System.out.println(p.isAlive());
-
-
-
 
 
         File input = new File(pth + "availability.json/");
