@@ -27,6 +27,11 @@ public class Parkirisce implements Serializable {
     private String lokacija;
     private Zasedenost zasedenost;
 
+    @Override
+    public String toString() {
+        return String.format("Ime: %s Zasedenost: %s", ime, zasedenost);
+    }
+
     public int getId() {
         return id;
     }
