@@ -32,6 +32,13 @@ jobs:
       run: |
         gcloud container clusters get-credentials ${{ secrets.GKE_CLUSTER }} --zone ${{ secrets.GKE_ZONE }}
 
+      # Configure Docker to use the gcloud command-line tool as a credential
+      # helper for authentication
+    - name: Docker configuration
+      run: |-
+        gcloud auth print-access-token | docker login -u oauth2accesstoken --password-stdin https://$GAR_ZONE-docker.pkg.dev
+
+
     # Build and push Docker image
     - name: Build and Push to Artifact Registry
       run: |
