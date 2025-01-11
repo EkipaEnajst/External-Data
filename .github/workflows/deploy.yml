@@ -32,6 +32,11 @@ jobs:
       run: |
         gcloud container clusters get-credentials ${{ secrets.GKE_CLUSTER }} --zone ${{ secrets.GKE_ZONE }}
 
+      # Install the GKE gcloud auth plugin
+    - name: Install gke-gcloud-auth-plugin
+      run: |
+        sudo apt-get install google-cloud-sdk-gke-gcloud-auth-plugin
+
       # Configure Docker to use the gcloud command-line tool as a credential
       # helper for authentication
     - name: Docker configuration
