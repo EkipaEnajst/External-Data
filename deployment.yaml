@@ -1,0 +1,60 @@
+---
+apiVersion: "apps/v1"
+kind: "Deployment"
+metadata:
+  name: "externaldata-deployment"
+  namespace: "default"
+  labels:
+    app: "externaldata-app"
+spec:
+  replicas: 3
+  selector:
+    matchLabels:
+      app: "externaldata-app"
+  template:
+    metadata:
+      labels:
+        app: "externaldata-app"
+    spec:
+      containers:
+        - name: "smartpark-1"
+          image: "sikosek/smartpark:externaldata"
+---
+apiVersion: "autoscaling/v2"
+kind: "HorizontalPodAutoscaler"
+metadata:
+  name: "externaldata-deployment-hpa-z4vf"
+  namespace: "default"
+  labels:
+    app: "externaldata-app"
+spec:
+  scaleTargetRef:
+    kind: "Deployment"
+    name: "externaldata-deployment"
+    apiVersion: "apps/v1"
+  minReplicas: 1
+  maxReplicas: 5
+  metrics:
+    - type: "Resource"
+      resource:
+        name: "cpu"
+        target:
+          type: "Utilization"
+          averageUtilization: 80
+---
+apiVersion: "v1"
+kind: "Service"
+metadata:
+  name: "externaldata-deployment-service"
+  namespace: "default"
+  labels:
+    app: "externaldata-app"
+spec:
+  ports:
+    - protocol: "TCP"
+      port: 8080
+      targetPort: 8080
+  selector:
+    app: "externaldata-app"
+  type: "LoadBalancer"
+  loadBalancerIP: ""

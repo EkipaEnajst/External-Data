@@ -4,6 +4,7 @@ import org.ekipaenajst.entitete.Parkirisce;
 import org.ekipaenajst.entitete.Uporabnik;
 import org.ekipaenajst.entitete.Zasedenost;
 
+import javax.annotation.PostConstruct;
 import javax.enterprise.context.ApplicationScoped;
 import javax.inject.Inject;
 import javax.persistence.EntityManager;
@@ -22,6 +23,11 @@ public class ParkiriscaZrno {
 
     @Inject
     ZasedenostZrno zasedenostZrno;
+
+    @PostConstruct
+    public void init() {
+        System.out.println("AAAAAAAAjajajajajaAAAAAAAAAAAAAAAAAA\nAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA\nAAAAAAAAAAAAAAAAAAAAAAAAAAA");
+    }
 
     private Logger log = Logger.getLogger(UporabnikiZrno.class.getName());
 
