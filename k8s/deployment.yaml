@@ -1,31 +1,60 @@
-apiVersion: apps/v1
-kind: Deployment
+---
+apiVersion: "apps/v1"
+kind: "Deployment"
 metadata:
-  name: externaldata-deployment
+  name: "externaldata-deployment"
+  namespace: "default"
   labels:
-    app: externaldata
+    app: "externaldata-app"
 spec:
-  replicas: 3  # Number of pod replicas
+  replicas: 3
   selector:
     matchLabels:
-      app: externaldata
+      app: "externaldata-app"
   template:
     metadata:
       labels:
-        app: externaldata
+        app: "externaldata-app"
     spec:
       containers:
-      - name: externaldata
-        image: europe-west8-docker.pkg.dev/${PROJECT_ID}/smartpark-repo/externaldata:latest
-        ports:
-        - containerPort: 8080  # Application exposes port 8080
-        resources:
-          requests:
-            memory: "128Mi"
-            cpu: "250m"
-          limits:
-            memory: "256Mi"
-            cpu: "500m"
-        env:
-        - name: ENVIRONMENT
-          value: "production"
+        - name: "externaldata-sha256-1"
+          image: "europe-west8-docker.pkg.dev/${PROJECT_ID}/smartpark-repo/externaldata:latest"
+---
+apiVersion: "autoscaling/v2"
+kind: "HorizontalPodAutoscaler"
+metadata:
+  name: "externaldata-deployment-hpa-j0iu"
+  namespace: "default"
+  labels:
+    app: "externaldata-app"
+spec:
+  scaleTargetRef:
+    kind: "Deployment"
+    name: "externaldata-deployment"
+    apiVersion: "apps/v1"
+  minReplicas: 1
+  maxReplicas: 5
+  metrics:
+    - type: "Resource"
+      resource:
+        name: "cpu"
+        target:
+          type: "Utilization"
+          averageUtilization: 80
+---
+apiVersion: "v1"
+kind: "Service"
+metadata:
+  name: "externaldata-deployment-service"
+  namespace: "default"
+  labels:
+    app: "externaldata-app"
+spec:
+  ports:
+    - protocol: "TCP"
+      port: 8080
+      targetPort: 8080
+  selector:
+    app: "externaldata-app"
+  type: "LoadBalancer"
+  loadBalancerIP: ""

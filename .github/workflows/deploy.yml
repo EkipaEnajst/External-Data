@@ -57,6 +57,5 @@ jobs:
         IMAGE_URI=europe-west8-docker.pkg.dev/${{ secrets.PROJECT_ID }}/smartpark-repo/externaldata:${{ github.sha }}
         sed -i "s|europe-west8-docker.pkg.dev/.*/smartpark-repo/externaldata:latest|$IMAGE_URI|g" k8s/deployment.yaml
         kubectl apply -f k8s/deployment.yaml
-        kubectl apply -f k8s/service.yaml
-        kubectl apply -f k8s/hpa.yaml  # Apply the HPA manifest
+
 
