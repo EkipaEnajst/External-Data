@@ -25,6 +25,7 @@ jobs:
     # Authenticate with GKE
     - name: Authenticate to GKE
       run: |
+        gcloud auth activate-service-account --key-file=/github/workspace/key.json
         gcloud container clusters get-credentials ${{ secrets.GKE_CLUSTER }} --zone ${{ secrets.GKE_ZONE }}
 
     # Build and push Docker image
