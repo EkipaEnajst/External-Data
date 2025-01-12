@@ -2,19 +2,19 @@
 apiVersion: "apps/v1"
 kind: "Deployment"
 metadata:
-  name: "externaldata-deployment"
+  name: "externaldata-deployment-test"
   namespace: "default"
   labels:
-    app: "externaldata-app"
+    app: "externaldata-app-test"
 spec:
   replicas: 3
   selector:
     matchLabels:
-      app: "externaldata-app"
+      app: "externaldata-app-test"
   template:
     metadata:
       labels:
-        app: "externaldata-app"
+        app: "externaldata-app-test"
     spec:
       containers:
         - name: "externaldata-sha256-1"
@@ -23,14 +23,14 @@ spec:
 apiVersion: "autoscaling/v2"
 kind: "HorizontalPodAutoscaler"
 metadata:
-  name: "externaldata-deployment-hpa-j0iu"
+  name: "externaldata-deployment-test-hpa"
   namespace: "default"
   labels:
-    app: "externaldata-app"
+    app: "externaldata-app-test"
 spec:
   scaleTargetRef:
     kind: "Deployment"
-    name: "externaldata-deployment"
+    name: "externaldata-deployment-test"
     apiVersion: "apps/v1"
   minReplicas: 1
   maxReplicas: 5
@@ -45,16 +45,16 @@ spec:
 apiVersion: "v1"
 kind: "Service"
 metadata:
-  name: "externaldata-deployment-service"
+  name: "externaldata-deployment-test-service"
   namespace: "default"
   labels:
-    app: "externaldata-app"
+    app: "externaldata-app-test"
 spec:
   ports:
     - protocol: "TCP"
       port: 8080
       targetPort: 8080
   selector:
-    app: "externaldata-app"
+    app: "externaldata-app-test"
   type: "LoadBalancer"
   loadBalancerIP: ""
